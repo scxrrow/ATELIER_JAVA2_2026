@@ -38,6 +38,27 @@
 <p>Créer une classe <code>Voiture</code> avec les attributs <code>marque</code>, <code>modele</code> et <code>annee</code>.</br>
 Instancier une voiture, lui affecter des valeurs et afficher ses caractéristiques.</p>
 
+<%!
+    class Voiture {
+        private String marque;
+        private String modele;
+        private int annee;
+
+        public Voiture(String marque, String modele, int annee){
+            this.marque = marque;
+            this.modele = modele;
+            this.annee = annee;
+        } 
+        
+    }
+    public class main{
+        public static void main(String[] args) {
+            Voiture porsche = new Voiture("Porsche", "911", "2023");
+            System.out.println("voiture de marque "+porsche.marque+" et modele "+porsche.modele+" année "+porsche.annee);
+          }
+    }
+%>
+
 <h2>Exercice 2 : Ajouter une méthode à la classe Personne</h2>
 <p>Ajouter à la classe <code>Personne</code> une méthode <code>seDecrire()</code> qui retourne une chaîne du type :</br>
 "Je m'appelle Marie et j'ai 25 ans".</br>
